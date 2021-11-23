@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Request">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT ITEM(s) to REQUEST"
+            android:textSize="27sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#0E5E56"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" />
+
+        <CheckBox
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c1"
+            android:text="A4 Bond Paper"
+            android:layout_marginLeft="100dp"
+            />
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c2"
+            android:text="Projector"
+            android:layout_marginLeft="100dp"
+            />
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c3"
+            android:text="Monitor"
+            android:layout_marginLeft="100dp"
+            />
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c4"
+            android:text="System Unit"
+            android:layout_marginLeft="100dp"
+            />
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c5"
+            android:text="Keyboard"
+            android:layout_marginLeft="100dp"
+            />
+        <CheckBox
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c6"
+            android:text="Mouse"
+            android:layout_marginLeft="100dp"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_itemLayout"
+            android:layout_width="300dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#065009"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_item"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:textColor="#065009"
+                android:hint="Not in the choices? Type here..."
+                android:textSize="19sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/item"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/delivery"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#0E5E56"
+            android:text="Delivery Options:"
+            android:layout_gravity="center"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c7"
+            android:text="Delivers by Staff"
+            />
+        <CheckBox
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c8"
+            android:text="Take it by self"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            app:backgroundTint="#009688"
+            android:onClick="back" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="150dp"
+            app:backgroundTint="#009688"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

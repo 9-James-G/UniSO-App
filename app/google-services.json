@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "89105318433",
+    "project_id": "uniso-38e5c",
+    "storage_bucket": "uniso-38e5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89105318433:android:8df965ea2778dfb616d960",
+        "android_client_info": {
+          "package_name": "com.group10.uniso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89105318433-rveasmg9hkjb3277pn9lte7l2qdhe3nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTJo9op47PuM4ItKb812yLtdNtQJ7w2C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89105318433-rveasmg9hkjb3277pn9lte7l2qdhe3nf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
