@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.group10.uniso" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.group10.uniso">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UniSO" >
+        android:theme="@style/Theme.UniSO">
         <activity
-            android:name=".Pending"
+            android:name=".JSONapi"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReturned"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReceived"
+            android:exported="false" />
+        <activity
+            android:name=".AdminApproved"
+            android:exported="false" />
+        <activity
+            android:name=".ViewRequest"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".AdminItems"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".RequestsList"
+            android:exported="false" />
+        <activity
+            android:name=".ItemsList"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSide"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherAdmin"
             android:exported="false" />
         <activity
             android:name=".Form"
@@ -23,13 +59,24 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        Notification-->
+        <service
+            android:name=".FirebaseMessagingService"
+            android:permission="TODO"
+            tools:ignore="ExportedService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+<!--        end notification-->
     </application>
 
 </manifest>

@@ -1,116 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
     tools:context=".Request">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SELECT ITEM(s) to REQUEST"
-            android:textSize="27sp"
+            android:textSize="29sp"
             android:fontFamily="sans-serif-medium"
             android:textColor="#0E5E56"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp" />
+            android:layout_margin="5dp" />
 
-        <CheckBox
-            android:layout_marginTop="25dp"
-            android:textSize="20sp"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/c1"
-            android:text="A4 Bond Paper"
-            android:layout_marginLeft="100dp"
-            />
-        <CheckBox
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c1"
+                android:text="A4 Bond Paper"
+                android:onClick="check1"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="minus1"
+                android:id="@+id/min1"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="-"
+                android:layout_marginLeft="75dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:id="@+id/q1"
+                android:enabled="false"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="plus1"
+                android:id="@+id/pls1"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="+"/>
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/c2"
-            android:text="Projector"
-            android:layout_marginLeft="100dp"
-            />
-        <CheckBox
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+            <CheckBox
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c2"
+                android:text="Projector"
+                android:onClick="check2"
+                />
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="minus2"
+                android:id="@+id/min2"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="-"
+                android:layout_marginLeft="128dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:id="@+id/q2"
+                android:enabled="false"
+                android:textColor="@color/black"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="plus2"
+                android:id="@+id/pls2"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/c3"
-            android:text="Monitor"
-            android:layout_marginLeft="100dp"
-            />
-        <CheckBox
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+            <CheckBox
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c3"
+                android:text="Monitor"
+                android:onClick="check3"
+                />
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="minus3"
+                android:id="@+id/min3"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="-"
+                android:layout_marginLeft="139dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:id="@+id/q3"
+                android:enabled="false"
+                android:textColor="@color/black"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="plus3"
+                android:id="@+id/pls3"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/c4"
-            android:text="System Unit"
-            android:layout_marginLeft="100dp"
-            />
-        <CheckBox
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c4"
+                android:text="System Unit"
+                android:onClick="check4"
+                />
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="minus4"
+                android:id="@+id/min4"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="-"
+                android:layout_marginLeft="102dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:id="@+id/q4"
+                android:enabled="false"
+                android:textColor="@color/black"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="plus4"
+                android:id="@+id/pls4"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/c5"
-            android:text="Keyboard"
-            android:layout_marginLeft="100dp"
-            />
-        <CheckBox
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c5"
+                android:text="Keyboard"
+                android:onClick="check5"
+                />
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="minus5"
+                android:id="@+id/min5"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="-"
+                android:layout_marginLeft="124dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:id="@+id/q5"
+                android:enabled="false"
+                android:textColor="@color/black"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="plus5"
+                android:id="@+id/pls5"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/c6"
-            android:text="Mouse"
-            android:layout_marginLeft="100dp"
-            />
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+            <CheckBox
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c6"
+                android:text="Mouse"
+                android:onClick="check6"
+                />
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="minus6"
+                android:id="@+id/min6"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="-"
+                android:layout_marginLeft="147dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:id="@+id/q6"
+                android:enabled="false"
+                android:textColor="@color/black"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="plus6"
+                android:id="@+id/pls6"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="+"/>
+        </LinearLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edit_itemLayout"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
             android:layout_height="68dp"
-            android:layout_marginTop="15dp"
             android:textColorHint="#065009"
             android:layout_gravity="center"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_item"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:textColor="#065009"
                 android:hint="Not in the choices? Type here..."
                 android:textSize="19sp"/>
         </com.google.android.material.textfield.TextInputLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/item"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/delivery"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
         <TextView
-            android:id="@+id/item"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
-        <TextView
-            android:id="@+id/delivery"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
             android:textSize="25sp"
             android:fontFamily="sans-serif-medium"
             android:textColor="#0E5E56"
@@ -121,13 +335,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
         <CheckBox
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/c7"
+            android:onClick="Check7"
             android:text="Delivers by Staff"
             />
         <CheckBox
@@ -135,6 +350,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/c8"
+            android:onClick="Check8"
             android:text="Take it by self"
             />
 
@@ -144,7 +360,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <Button
@@ -155,12 +371,23 @@
             android:onClick="back" />
         <Button
             android:id="@+id/btn_submit"
+            android:onClick="submit"
             android:layout_width="150dp"
             app:backgroundTint="#009688"
             android:layout_height="wrap_content"
             android:text="SUBMIT"
             android:layout_marginLeft="15dp"/>
+    </LinearLayout>
 
-    </LinearLayout>
-    </LinearLayout>
+</LinearLayout>
 </ScrollView>
+<RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+        layout="@layout/main_nav_drawer"/>
+</RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>

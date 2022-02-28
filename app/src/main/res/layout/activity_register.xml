@@ -11,32 +11,33 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="Register to UniSO"
-            android:textColor="#009688"
-            android:textSize="35sp"
-            android:layout_gravity="center" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="University Supply Office"
-            android:textColor="#009688"
-            android:textSize="20sp"
-            android:layout_gravity="center" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/uniso_icon">
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rIDLayout"
+            android:layout_width="300dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
+            android:hint="Staff ID"
+            android:textColorHint="#065009"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:id="@+id/editRID"
+                android:layout_height="60dp"
+                android:inputType="textPersonName"
+                android:textColor="#065009"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/rNameLayout"
             android:layout_width="300dp"
             android:layout_height="68dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="5dp"
             android:hint="Name"
             android:textColorHint="#065009"
             android:layout_gravity="center"
@@ -63,29 +64,18 @@
                 android:layout_width="300dp"
                 android:id="@+id/editRContact"
                 android:layout_height="60dp"
-                android:inputType="textPhonetic"
+                android:inputType="number"
+                android:maxLength="11"
                 android:textColor="#065009"
                 android:textSize="20sp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/rdepartmentLayout"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="300dp"
-            android:layout_height="68dp"
-            android:layout_marginTop="10dp"
-            android:hint="Department"
-            android:textColorHint="#065009"
-            android:layout_gravity="center"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:textSize="20sp"
-                android:textColor="#065009"
-                android:id="@+id/editDep"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"/>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/staffEmailLayout"
             android:layout_width="300dp"
@@ -127,15 +117,15 @@
             style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center"
-            android:visibility="invisible" />
+            android:layout_marginTop="1dp"
+            android:visibility="invisible"
+            android:layout_gravity="center" />
 
         <Button
             android:id="@+id/register"
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="1dp"
             android:fontFamily="sans-serif-black"
             android:text="REGISTER"
             app:backgroundTint="#009688"
@@ -146,8 +136,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="Already have account? Login."
-            android:textColor="#F65A4F"
+            android:text="Already have verified account? Login."
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:layout_gravity="center"/>
 

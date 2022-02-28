@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
     tools:context=".Form">
-
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,8 +65,7 @@
             android:layout_width="300dp"
             android:layout_height="68dp"
             android:layout_marginTop="10dp"
-            android:inputType="textPhonetic"
-            android:hint="Contact no./Email"
+            android:hint="Contact no."
             android:textColorHint="#065009"
             android:layout_gravity="center"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -70,7 +74,9 @@
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:textSize="19sp"
+                android:maxLength="11"
                 android:textColor="#065009"
+                android:inputType="number"
                 android:id="@+id/Formcontact"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,6 +86,7 @@
             android:layout_height="68dp"
             android:layout_marginTop="10dp"
             android:hint="Department"
+            android:enabled="false"
             android:textColorHint="#065009"
             android:layout_gravity="center"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -95,16 +102,16 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/FormroomLayout"
             android:layout_width="300dp"
-            android:layout_height="68dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Room no."
+            android:hint="Room"
             android:textColorHint="#065009"
             android:layout_gravity="center"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="300dp"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="#065009"
                 android:id="@+id/Formroom"/>
@@ -119,9 +126,8 @@
             android:fontFamily="sans-serif-medium"
             android:textColor="#0E5E56"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp" />
-
-
+            android:id="@+id/tvtv"
+            android:layout_marginTop="45dp" />
 
         <Button
             android:id="@+id/btn_proc"
@@ -133,15 +139,18 @@
             android:layout_marginTop="10dp"
             android:text="PROCEED TO REQUEST" />
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="LOGOUT"
-            app:backgroundTint="#009688"
-            android:layout_gravity="center"
-            android:id="@+id/logout"
-            android:onClick="logout"
-            android:layout_marginTop="10dp"/>
-
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

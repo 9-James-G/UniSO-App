@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Profile">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#065009"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/tv1"/>
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:id="@+id/image"
+            android:src="@drawable/profile"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center">-->
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Select image"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:id="@+id/selectImg"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="| Upload image"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:id="@+id/saveImg"/>-->
+<!--        </LinearLayout>-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idLayout"
+            android:layout_width="300dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:hint="Staff ID"
+            android:textColorHint="#065009"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="#065009"
+            android:id="@+id/idTxt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/departmentLayout"
+            android:layout_width="300dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:hint="Department"
+            android:textColorHint="#065009"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:textColor="#065009"
+                android:id="@+id/department"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FormnameLayout"
+            android:layout_width="300dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:hint="Full Name"
+            android:textColorHint="#065009"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:textColor="#065009"
+                android:id="@+id/Formname"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FormcontactLayout"
+            android:layout_width="300dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:hint="Contact no."
+            android:textColorHint="#065009"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:textSize="19sp"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#065009"
+                android:id="@+id/Formcontact"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/addressLayout"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="68dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="Room no."-->
+<!--            android:textColorHint="#065009"-->
+<!--            android:layout_gravity="center"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/user_address"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:textColor="#065009"-->
+<!--                android:textSize="20sp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_gravity="center" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="#009688"
+            android:visibility="visible"
+            android:text="EDIT DETAILS"
+            android:id="@+id/btnEdit"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:backgroundTint="#009688"
+                android:visibility="gone"
+                android:text="CANCEL"
+                android:id="@+id/btnCancel"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:backgroundTint="#009688"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:text="SAVE"
+                android:id="@+id/btnSave"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -3,11 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_form.xml" value="0.22" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/drawable/ic_check.xml" value="0.2203125" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/drawable/ic_requests.xml" value="0.2203125" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_admin_approved.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_admin_items.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_admin_received.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_admin_returned.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_admin_side.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_form.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_items_list.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_jsonapi.xml" value="0.1453804347826087" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_kunyari.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_my_location.xml" value="0.16847826086956522" />
         <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_pending.xml" value="0.25" />
-        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_profile.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_request.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_requestlist.xml" value="0.1" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_requests_list.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_teacher_admin.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/activity_view_request.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/admin_nav_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/adminrequests.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/json_items.xml" value="0.1453804347826087" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/list.xml" value="0.19655797101449277" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/main_nav_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/main_toolbar.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/resetpassword.xml" value="0.25" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/UniSO/app/src/main/res/layout/updatepassword.xml" value="0.17481884057971014" />
       </map>
     </option>
   </component>
